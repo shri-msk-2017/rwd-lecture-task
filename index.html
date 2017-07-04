@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>Адаптивная верстка</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    </head>
+
+    <body>
+        <div class="header">
+            <a href="#" class="header__logo">
+                <img src="./images/logo.svg" alt="Яндекс" class="header__logo-img"/>
+            </a>
+
+            <span class="header-menu-btn">
+                <span class="header-menu-btn__inner"></span>
+            </span>
+
+            <ul class="header-menu">
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Пункт меню 1</a>
+                </li>
+
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Пункт меню 2</a>
+                </li>
+
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Пункт меню 3</a>
+                </li>
+
+                <li class="header-menu__item">
+                    <a href="#" class="header-menu__link">Пункт меню 4</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="promo">
+            <div class="promo__content">
+                <h1 class="promo__title">Адаптивная верстка</h1>
+                <div class="promo__text">примеры применения</div>
+                <a href="#" class="button promo__link">Узнать больше</a>
+            </div>
+        </div>
+
+        <div class="content-section intro">
+            <img src="./images/intro.png" class="intro__img"/>
+
+            <div class="intro__content">
+                <h1 class="content-section__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h1>
+
+                <p>
+                    Donec faucibus, magna id interdum vehicula, felis nunc imperdiet odio, sit amet dignissim augue
+                    dui eget diam. Vestibulum et massa non metus convallis mattis eu ut lorem. Nulla pharetra id neque
+                    non dignissim. Aliquam gravida molestie egestas. In rhoncus sodales odio, ac ornare lorem.
+                    Nunc sollicitudin tortor sit amet tellus egestas, et congue massa mollis. Aliquam ultricies
+                    mauris feugiat libero sagittis, sit amet ultrices nisl vestibulum.
+                </p>
+            </div>
+        </div>
+
+        <div class="content-section stats">
+            <h1 class="content-section__title">
+                Статистика использования ОС
+            </h1>
+
+            <table class="stat-table">
+                <thead>
+                    <tr>
+                        <th class="stat-table__header-col">ОС</th>
+                        <th class="stat-table__header-col">Июнь</th>
+                        <th class="stat-table__header-col">Июль</th>
+                        <th class="stat-table__header-col">В среднем за 3 месяца</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="stat-table__col">Android</td>
+                        <td class="stat-table__col">44,988,708 - 57.1%</td>
+                        <td class="stat-table__col">50,457,587 - 57.1%</td>
+                        <td class="stat-table__col">49,242,820 - 56.7%</td>
+                    </tr>
+
+                    <tr>
+                        <td class="stat-table__col">iOS iPhone</td>
+                        <td class="stat-table__col">12,065,816 - 15.3%</td>
+                        <td class="stat-table__col">13,338,362 - 15.1%</td>
+                        <td class="stat-table__col">13,163,888 - 15.2%</td>
+                    </tr>
+
+                    <tr>
+                        <td class="stat-table__col">Windows 7</td>
+                        <td class="stat-table__col">10,660,294 - 13.5%</td>
+                        <td class="stat-table__col">12,122,141 - 13.7%</td>
+                        <td class="stat-table__col">12,084,876 - 13.9%</td>
+                    </tr>
+
+                    <tr>
+                        <td class="stat-table__col">Windows 10</td>
+                        <td class="stat-table__col">4,858,415 - 6.2%</td>
+                        <td class="stat-table__col">5,335,514 - 6.0%</td>
+                        <td class="stat-table__col">5,282,992 - 6.1%</td>
+                    </tr>
+
+                    <tr>
+                        <td class="stat-table__col">Windows 8</td>
+                        <td class="stat-table__col">2,384,594 - 3.0%</td>
+                        <td class="stat-table__col">2,657,661 - 3.0%</td>
+                        <td class="stat-table__col">2,651,051 - 3.1%</td>
+                    </tr>
+
+                    <tr>
+                        <td class="stat-table__col">Windows XP</td>
+                        <td class="stat-table__col">1,231,628 - 1.6%</td>
+                        <td class="stat-table__col">1,529,360 - 1.7%</td>
+                        <td class="stat-table__col">1,526,668 - 1.8%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <script>
+            document.querySelector('.header-menu-btn').addEventListener('click', function() {
+                document.querySelector('.header-menu').classList.toggle("header-menu_active");
+            });
+        </script>
+    </body>
+</html>
